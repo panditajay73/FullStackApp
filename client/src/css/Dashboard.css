@@ -1,0 +1,232 @@
+/* Apply a sleek gradient background */
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hid;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    padding: 20px;
+}
+
+/* Navbar */
+.dashboard-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+/* Logo */
+.nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+/* Dashboard Content */
+.dashboard-content {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.dashboard-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Content Cards */
+.dashboard-cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card Title */
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Card Description */
+.card p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+.user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.role-badge {
+    font-size: 0.85rem;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.role-badge.admin {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.role-badge.user {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.role-badge {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+/* Centered Task Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight:bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-links button:hover {
+    color: #38bdf8;
+}
+
+/* User Info */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 85px;
+    right: 20px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.dropdown-menu button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+}
+
+.logout-btn {
+    color: red;
+}
+.dropdown-menu2 {
+    position: absolute;
+    top: 70px;
+    background: #14272f;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+
+    font-weight: bold;
+    flex-direction: column;
+    z-index: 1000;
+}
+.dropdown-menu2 button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    font-weight: bold;
+}

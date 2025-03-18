@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1f2e34;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.task-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #31464d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    text-align: center;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+}
+.task-container h2 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* Task Table */
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #3a525a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.task-table thead {
+    background-color: #2a3d44;
+}
+
+.task-table th, 
+.task-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #455a64;
+}
+
+.task-table th {
+    color: #f4f4f4;
+    text-transform: uppercase;
+}
+
+.task-table tr:hover {
+    background-color: #2e434b;
+}
+
+/* Status Labels */
+.status-todo {
+    background: #ff9800;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status-inprogress {
+    background: #2196f3;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status-completed {
+    background: #4caf50;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.status-failed {
+    background: #f44336;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Status Update Section */
+.status-update-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.status-update-section select {
+    padding: 10px;
+    background: #3a525a;
+    color: #f4f4f4;
+    border: 1px solid #455a64;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.status-update-section select:hover {
+    background: #2a3d44;
+}
+
+.status-update-section button {
+    padding: 10px 15px;
+    background: #764ba2;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.status-update-section button:hover {
+    background: #5a3e85;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dim background */
+    backdrop-filter: blur(10px); /* Blurred effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 0); /* Semi-transparent */
+    backdrop-filter: blur(15px); /* Blur effect */
+    padding: 25px;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.3s ease-in-out;
+    color: #fff; /* Adjust text color for contrast */
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: white; /* Ensuring visibility */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.task-title-link{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #f0ad4e;
+    font-weight: bold;
+}

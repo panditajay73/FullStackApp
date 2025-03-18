@@ -1,0 +1,121 @@
+.task-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.task-container h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.task-form label {
+    font-weight: 600;
+    color: #fff;
+}
+
+.task-form input,
+.task-form textarea {
+    width: 94%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background: #11232b;
+    color:white;
+    
+}
+.task-form select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+.task-form input:focus,
+.task-form textarea:focus,
+.task-form select:focus {
+    border-color: #5a3e85;
+}
+
+.task-form textarea {
+    resize: none;
+    height: 50px;
+    background: #11232b;
+    color:white;
+}
+
+.task-form select {
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg fill="%23007bff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/></svg>') no-repeat right 12px center;
+    background-size: 14px;
+}
+
+.file-input-container {
+    position: relative;
+    text-align: center;
+}
+
+.file-input-container input[type="file"] {
+    display: none;
+}
+
+.file-input-container label {
+    background: #5a3e85;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.file-input-container label:hover {
+    background: #5a3e85;
+}
+
+.selected-file {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+}
+
+.task-form button {
+    background: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width:40%;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.task-form button:hover {
+    background: #218838;
+}
+
+.task-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}

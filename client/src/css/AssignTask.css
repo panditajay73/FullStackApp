@@ -1,0 +1,218 @@
+.assign-task-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #31464d;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.tabs button.active {
+    background: #2c5262;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tabs button:hover {
+    background: #2c5263;
+    color: #fff;
+}
+
+/* Table */
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.task-table th, .task-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.task-table th {
+    background: #2c5265;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.task-table tr:hover {
+    background: #f5f5f5;
+    color:black;
+}
+
+/* Buttons */
+button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Assign Button */
+button.assign {
+    background: #28a745;
+    color: white;
+    
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button.assign:hover {
+    background: #218838;
+}
+
+/* Transfer Button */
+button.transfer {
+    background: #ffc107;
+    color: black;
+}
+
+button.transfer:hover {
+    background: #e0a800;
+}
+
+/* Delete Button */
+button.delete {
+    background: #dc3545;
+    color: white;
+}
+
+button.delete:hover {
+    background: #c82333;
+}
+
+/* Bulk Delete Button */
+.delete-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 15px;
+    background: #ff4d4d;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.delete-button:hover {
+    background: #cc0000;
+}
+
+/* Select Dropdown */
+select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .assign-task-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .task-table th, .task-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+.action-section{
+ margin-top: 30px;   
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dim background */
+    backdrop-filter: blur(10px); /* Blurred effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 0); /* Semi-transparent */
+    backdrop-filter: blur(15px); /* Blur effect */
+    padding: 25px;
+    width: 50%;
+    max-width: 600px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.3s ease-in-out;
+    color: #fff; /* Adjust text color for contrast */
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: white; /* Ensuring visibility */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.task-title-link{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #f0ad4e;
+    font-weight: bold;
+}

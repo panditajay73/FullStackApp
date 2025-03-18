@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "ekgsgBwDwjNZOu7ajxwoDgAn3UD8tdDQQ5/xEUKEcRk=",
+  "Source": "Server",
+  "BasePath": "_content/Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Server\\wwwroot",
+      "Source": "Server",
+      "ContentRoot": "E:\\wipro\\NGA_Phase2\\FullStackApp\\Server\\wwwroot\\",
+      "BasePath": "_content/Server",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\wipro\\NGA_Phase2\\FullStackApp\\Server\\wwwroot\\documents\\638777968306982701_Untitled.pdf",
+      "SourceId": "Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\wipro\\NGA_Phase2\\FullStackApp\\Server\\wwwroot\\",
+      "BasePath": "_content/Server",
+      "RelativePath": "documents/638777968306982701_Untitled#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ms4zlq8cfn",
+      "Integrity": "+p8p2UPmysniYS15Kz7WPUK0p26CJ+S2z4tJnwFdzyo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\documents\\638777968306982701_Untitled.pdf"
+    },
+    {
+      "Identity": "E:\\wipro\\NGA_Phase2\\FullStackApp\\Server\\wwwroot\\documents\\638777970304968553_Untitled.pdf",
+      "SourceId": "Server",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\wipro\\NGA_Phase2\\FullStackApp\\Server\\wwwroot\\",
+      "BasePath": "_content/Server",
+      "RelativePath": "documents/638777970304968553_Untitled#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ms4zlq8cfn",
+      "Integrity": "+p8p2UPmysniYS15Kz7WPUK0p26CJ+S2z4tJnwFdzyo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\documents\\638777970304968553_Untitled.pdf"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "documents/638777968306982701_Untitled.ms4zlq8cfn.pdf",
+      "AssetFile": "E:\\wipro\\NGA_Phase2\\FullStackApp\\Server\\wwwroot\\documents\\638777968306982701_Untitled.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97329"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+p8p2UPmysniYS15Kz7WPUK0p26CJ+S2z4tJnwFdzyo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 08:27:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ms4zlq8cfn"
+        },
+        {
+          "Name": "label",
+          "Value": "documents/638777968306982701_Untitled.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+p8p2UPmysniYS15Kz7WPUK0p26CJ+S2z4tJnwFdzyo="
+        }
+      ]
+    },
+    {
+      "Route": "documents/638777968306982701_Untitled.pdf",
+      "AssetFile": "E:\\wipro\\NGA_Phase2\\FullStackApp\\Server\\wwwroot\\documents\\638777968306982701_Untitled.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97329"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+p8p2UPmysniYS15Kz7WPUK0p26CJ+S2z4tJnwFdzyo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 08:27:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+p8p2UPmysniYS15Kz7WPUK0p26CJ+S2z4tJnwFdzyo="
+        }
+      ]
+    },
+    {
+      "Route": "documents/638777970304968553_Untitled.ms4zlq8cfn.pdf",
+      "AssetFile": "E:\\wipro\\NGA_Phase2\\FullStackApp\\Server\\wwwroot\\documents\\638777970304968553_Untitled.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97329"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+p8p2UPmysniYS15Kz7WPUK0p26CJ+S2z4tJnwFdzyo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 08:30:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ms4zlq8cfn"
+        },
+        {
+          "Name": "label",
+          "Value": "documents/638777970304968553_Untitled.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+p8p2UPmysniYS15Kz7WPUK0p26CJ+S2z4tJnwFdzyo="
+        }
+      ]
+    },
+    {
+      "Route": "documents/638777970304968553_Untitled.pdf",
+      "AssetFile": "E:\\wipro\\NGA_Phase2\\FullStackApp\\Server\\wwwroot\\documents\\638777970304968553_Untitled.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97329"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+p8p2UPmysniYS15Kz7WPUK0p26CJ+S2z4tJnwFdzyo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 17 Mar 2025 08:30:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+p8p2UPmysniYS15Kz7WPUK0p26CJ+S2z4tJnwFdzyo="
+        }
+      ]
+    }
+  ]
+}
