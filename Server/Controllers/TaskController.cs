@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
+using Server.Services;
 
 
 namespace Server.Controllers
@@ -16,10 +17,12 @@ namespace Server.Controllers
     public class TaskController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly EmailService _emailService;
 
-        public TaskController(AppDbContext context)
+        public TaskController(AppDbContext context, EmailService emailService)
         {
             _context = context;
+            _emailService = emailService;
         }
 
         // Create Task (Only Admins & Project Managers)
@@ -42,6 +45,26 @@ namespace Server.Controllers
 
 
         // Assign Task (Only Admins & Project Managers)
+        //[HttpPost("assign")]
+        //[Authorize(Roles = "Admin,Project Manager")]
+        //public async Task<IActionResult> AssignTask(int taskId, int userId)
+        //{
+        //    var task = await _context.Tasks.FindAsync(taskId);
+        //    var user = await _context.Users.FindAsync(userId);
+
+        //    if (task == null || user == null)
+        //        return NotFound("Task or User not found.");
+
+        //    var assignedByUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value; // Keep as string
+
+        //    task.AssignedTo = userId;
+        //    task.AssignedBy = assignedByUserId; // Store as string
+
+        //    await _context.SaveChangesAsync();
+
+        //    return Ok(new { message = "Task assigned successfully." });
+        //}
+
         [HttpPost("assign")]
         [Authorize(Roles = "Admin,Project Manager")]
         public async Task<IActionResult> AssignTask(int taskId, int userId)
@@ -59,9 +82,14 @@ namespace Server.Controllers
 
             await _context.SaveChangesAsync();
 
-            return Ok(new { message = "Task assigned successfully." });
-        }
+            // Send email notification
+            string subject = "New Task Assigned";
+            string message = $"Dear {user.Username},\n\nYou have been assigned a new task: \"{task.Title}\".\n\nPlease check the system for details.\n\nBest Regards,\nAdmin Team";
 
+            _emailService.SendEmail(user.Email, subject, message);
+
+            return Ok(new { message = "Task assigned successfully and email notification sent." });
+        }
 
 
         // Update Task Status (Only Assignee)
