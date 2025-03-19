@@ -6,9 +6,8 @@
 1. [Problem Definition and Objectives](#problem-definition-and-objectives)
 2. [Frontend & Backend Architecture](#frontend--backend-architecture)
 3. [Component Breakdown & API Design](#component-breakdown--api-design)
-4. [Database Design](#database-design)
-5. [Project Directory Structure](#project-directory-structure)
-6. [Instructions to Run the Project](#instructions-to-run-the-project)
+4. [Project Directory Structure](#project-directory-structure)
+5. [Instructions to Run the Project](#instructions-to-run-the-project)
 
 ---
 
@@ -71,11 +70,6 @@ The **Project Collaboration Tool** is a task management system that allows users
 ### **Authentication Mechanism**
 - **JWT Token-based authentication**
 - **Role-based access control** (Admin, Project Manager, User)
-
----
-
-## **Database Design**
-The **Entity-Relationship Diagram (ERD)** is available in the project folder.
 
 ---
 
