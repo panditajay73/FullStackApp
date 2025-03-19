@@ -1,7 +1,5 @@
 # Project Collaboration Tool
-## **Author:** 
-Ajay Pandey
-
+## **Author: Ajay Pandey** 
 ---
 
 ## **Table of Contents**
