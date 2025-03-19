@@ -1,16 +1,6 @@
 # Project Collaboration Tool
-
-## **Project Title:** 
-Project Collaboration Tool
-
 ## **Author:** 
 Ajay Pandey
-
-## **Date:** 
-March 20, 2025
-
-## **Instructor Details:** 
-Mr. Abhishek Sharma
 
 ---
 
@@ -21,7 +11,6 @@ Mr. Abhishek Sharma
 4. [Database Design](#database-design)
 5. [Project Directory Structure](#project-directory-structure)
 6. [Instructions to Run the Project](#instructions-to-run-the-project)
-7. [GitHub Repository Link](#github-repository-link)
 
 ---
 
