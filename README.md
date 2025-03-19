@@ -82,11 +82,11 @@ The **Entity-Relationship Diagram (ERD)** is available in the project folder.
 ---
 
 ## **Project Directory Structure**
-/FullStackApp
-│── /client (React Frontend)
-│── /server (ASP.NET Core API)
-│── /database
-│── README.md
+- /FullStackApp
+- │── /client (React Frontend)
+- │── /server (ASP.NET Core API)
+- │── /database
+- │── README.md
 
 
 ---
@@ -104,13 +104,14 @@ The **Entity-Relationship Diagram (ERD)** is available in the project folder.
   "DefaultConnection": "Server=<YOUR_SERVER_NAME>;Database=FullStackAppDB;Trusted_Connection=True;TrustServerCertificate=True;"
 
 ### **3. Frontend Setup**
--After running the  server open client folder in visual studio code.
--Then type npm install to install all used libraries/modules
--after installation type npm start to start the frontend of project.
+- After running the  server open client folder in visual studio code.
+- Then type npm install to install all used libraries/modules
+- after installation type npm start to start the frontend of project.
 
 
 ## **Admin Credentials for Login**
 - Username: ajay
 - Email: ajaypandey91700@gmail.com
- - Password: a
-For Project Manager, you can register directly by selecting the role.
+- Password: a
+  
+**For Project Manager, you can register directly by selecting the role.**
